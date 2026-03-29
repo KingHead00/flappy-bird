@@ -8,32 +8,34 @@
 </head>
 <body>
 
-<div id="game-wrapper">
-  <canvas id="gameCanvas" width="360" height="640"></canvas>
+  <div id="game-wrapper">
+    <canvas id="gameCanvas" width="360" height="640"></canvas>
 
-  <div id="ui-overlay">
-    <div id="score-display">0</div>
+    <div id="ui-overlay">
+      <div id="score-display">0</div>
 
-    <div id="screen">
-      <div class="screen-box" id="start-screen">
-        <div class="screen-title">🐦 FLAPPY<br>BIRD</div>
-        <div class="screen-sub">Dodge the pipes<br>Score as high as you can!</div>
-        <div class="tap-hint">[ TAP / CLICK / SPACE ]</div>
-      </div>
+      <div id="screen">
 
-      <div class="screen-box" id="over-screen" style="display:none;">
-        <div class="screen-title">GAME OVER</div>
-        <div class="medal" id="medal-icon">💀</div>
-        <div class="screen-score" id="final-score">Score: 0</div>
-        <div id="best-badge">🏆 BEST: 0</div>
-        <div class="tap-hint">[ TAP TO RETRY ]</div>
+        <div class="screen-box" id="start-screen">
+          <div class="screen-title">&#x1F426; FLAPPY<br>BIRD</div>
+          <div class="screen-sub">Dodge the pipes!<br>Score as high as you can!</div>
+          <div class="tap-hint">TAP &bull; CLICK &bull; SPACE</div>
+        </div>
+
+        <div class="screen-box" id="over-screen">
+          <div class="screen-title">GAME OVER</div>
+          <div class="medal" id="medal-icon">&#x1F480;</div>
+          <div class="screen-score" id="final-score">Score: 0</div>
+          <div id="best-badge">&#x1F3C6; BEST: 0</div>
+          <div class="tap-hint">TAP TO RETRY</div>
+        </div>
+
       </div>
     </div>
   </div>
-</div>
 
-<div id="instructions">SPACE · CLICK · TAP to flap</div>
+  <p id="instructions">SPACE &bull; CLICK &bull; TAP to flap</p>
 
-<script src="game.js"></script>
+  <script src="game.js"></script>
 </body>
 </html>
